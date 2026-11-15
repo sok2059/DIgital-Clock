@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #0761e9;
+  font-family: Arial, sans-serif;
+}
+
+.watch {
+  width: min(420px, 100%);
+  padding: 26px 30px 20px;
+  border: 12px solid #25282b;
+  border-radius: 34px;
+  background: linear-gradient(145deg, #4b5054, #202326);
+  box-shadow: 0 22px 45px #0005, inset 0 2px 3px #ffffff40;
+}
+
+.brand {
+  color: #f3f4f6;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.model {
+  margin: 4px 0 16px;
+  color: #c5c9cc;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.screen {
+  padding: 14px 16px;
+  border: 3px solid #111827;
+  border-radius: 8px;
+  background: #b5c4a4;
+  color: #1e2a22;
+  box-shadow: inset 0 3px 8px #0003;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+.top-row,
+.time-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-row {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+}
+
+.time-row {
+  margin-top: 8px;
+}
+
+#time {
+  font-size: clamp(2rem, 9vw, 3rem);
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+#period {
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  color: #e5e7eb;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.buttons button {
+  padding: 8px 10px;
+  border: 1px solid #111827;
+  border-radius: 6px;
+  background: #34383c;
+  color: #f3f4f6;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #50565b;
+}
+
+.screen.backlight {
+  background: #e7f4c8;
+  box-shadow: 0 0 22px #d9ff9a, inset 0 3px 8px #0002;
+}
+
+.screen.adjusting {
+  outline: 2px solid #d9ff9a;
+}

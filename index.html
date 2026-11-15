@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Watch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="watch" aria-label="Digital clock">
+    <div class="brand">CASIO</div>
+    <div class="model">DIGITAL WATCH</div>
+
+    <section class="screen" aria-live="off">
+      <div class="top-row">
+        <span id="day">MON</span>
+        <span id="date">01-01</span>
+      </div>
+      <div class="time-row">
+        <span id="time">00:00:00</span>
+        <span id="period">AM</span>
+      </div>
+    </section>
+
+    <div class="buttons">
+  <button id="adjustButton" type="button">ADJUST</button>
+  <button id="modeButton" type="button">MODE</button>
+  <button id="lightButton" type="button">LIGHT</button>
+</div>
+  </main>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
